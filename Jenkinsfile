@@ -1,15 +1,21 @@
-agent any
-stages{
-stage ('delete the workspace'){
-steps{
-cleanWs()
-}}
-stage('second stage'){
-steps{
-echo "second stage"}}
-stage('third stage'){
-steps{
-echo "third stage"}}}}
-
-~
+pipeline{
+    agent any
+    stages {
+        stage('Delete the workspace'){
+            steps{
+                cleanWs()
+            }
+        }
+       stage('Second stage'){
+           steps {
+               echo "Second stage"
+           }
+        }
+       stage ('Third stage') {
+           steps{
+               echo "Third Stage"
+           }
+       }
+     }
+  }
 
