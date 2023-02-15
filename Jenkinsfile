@@ -14,7 +14,7 @@ pipeline{
           }
          stage ( ' Download Java code ') {
             steps{
-                git branch: 'main', credentialsId: 'git-repo-creds', url: 'git@github.com:Shekhar9897/shekqwe.git'
+                git branch: 'main', credentialsId: 'git-repo-creds', url: 'https://github.com/singhankit148148/my-repo.git'
       }
    }
     stage('Compiling and Running Test Cases') {
@@ -25,4 +25,4 @@ pipeline{
        }
 }
   }
-}
+i}
